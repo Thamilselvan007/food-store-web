@@ -13,29 +13,51 @@
 <body class="font-[roboto]"> 
     <!--Nav bar section start-->
     <section id="nav">
-        <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-        <div class="2xl:container mx-auto">
-            <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-4 items-center py-2">
-                <div class="flex items-center justify-between col-span-1">
-                    <img src="https://ik.imagekit.io/Thamilselvan/Food%20project/food-munch-img.png?updatedAt=1757134730651" alt="logo-img" width="80px">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2.10" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu md:hidden">
-              <path d="M4 5h16"></path>
-              <path d="M4 12h16"></path>
-              <path d="M4 19h16"></path>
-            </svg>
-                </div>
-                <div class="md:col-span-3 hidden md:block">
-            <ul class="flex items-center gap-10 justify-end">
-              <li><a class="relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-yellow-400 after:transition-all after:duration-300 hover:after:w-full" href="#choose">Why choose us ?</a></li>
-              <li><a class="relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-yellow-400 after:transition-all after:duration-300 hover:after:w-full" href="#menu">Explore Menu</a></li>
-              <li><a class="relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-yellow-400 after:transition-all after:duration-300 hover:after:w-full" href="#deliver">Payment</a></li>
-              <li><a class="relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-yellow-400 after:transition-all after:duration-300 hover:after:w-full" href="#redeem">Gift</a></li>
-               <button class="py-2 px-5 rounded-lg text-white bg-[#C6A900]] border border-[#C6A900] hover:bg-transparent hover:text-[#C6A900]">Login/Sign</button>
-            </ul>
-          </div>
-            </div>
+  <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <div class="2xl:container mx-auto">
+      <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-4 items-center py-2">
+        
+        <!-- Logo + Menu Icon -->
+        <div class="flex items-center justify-between col-span-1">
+          <img src="https://ik.imagekit.io/Thamilselvan/Food%20project/food-munch-img.png?updatedAt=1757134730651" 
+               alt="logo-img" width="80px">
+
+          <!-- Menu Icons -->
+          <!-- Hamburger -->
+          <svg id="menu-btn" xmlns="http://www.w3.org/2000/svg" width="28" height="28" 
+               viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2.2" 
+               stroke-linecap="round" stroke-linejoin="round" 
+               class="cursor-pointer md:hidden">
+            <path d="M4 5h16"></path>
+            <path d="M4 12h16"></path>
+            <path d="M4 19h16"></path>
+          </svg>
+
+          <!-- Cross Icon -->
+          <svg id="close-btn" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+               viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2.2"
+               stroke-linecap="round" stroke-linejoin="round"
+               class="cursor-pointer hidden md:hidden">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
         </div>
-    </nav>
+
+        <!-- Nav Links -->
+        <div id="menu" 
+             class="md:col-span-3 max-h-0 overflow-hidden transition-all duration-500 ease-in-out md:max-h-full md:block">
+          <ul class="flex flex-col md:flex-row md:items-center gap-6 md:gap-10 justify-end p-4 md:p-0">
+            <li><a class="relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-yellow-400 after:transition-all after:duration-300 hover:after:w-full" href="#choose">Why choose us ?</a></li>
+            <li><a class="relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-yellow-400 after:transition-all after:duration-300 hover:after:w-full" href="#Exploremenu">Explore Menu</a></li>
+            <li><a class="relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-yellow-400 after:transition-all after:duration-300 hover:after:w-full" href="#deliver">Payment</a></li>
+            <li><a class="relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-yellow-400 after:transition-all after:duration-300 hover:after:w-full" href="#redeem">Gift</a></li>
+            <button class="py-2 px-5 rounded-lg text-white bg-[#C6A900] border border-[#C6A900] hover:bg-transparent hover:text-[#C6A900]">Login/Sign</button>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </nav>
     </section>
     <!--Nav bar section start-->
 
@@ -106,7 +128,7 @@
     <!--Why choose us start-->
 
     <!--Menu Card Start-->     
-    <section id="menu" class="py-5">
+    <section id="Exploremenu" class="py-5">
       <div class="max-w-full 2xl:container 2xl:mx-auto space-y-6 bg-[#F9FAFF]">
         
         <!-- Section Heading -->
@@ -353,4 +375,20 @@
     </section>
     <!--footer section end-->
 </body>
+<!--script-->
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const closeBtn = document.getElementById("close-btn");
+  const menu = document.getElementById("menu");
+
+  function toggleMenu() {
+    menu.classList.toggle("max-h-0");
+    menu.classList.toggle("max-h-screen");
+    menuBtn.classList.toggle("hidden");
+    closeBtn.classList.toggle("hidden");
+  }
+
+  menuBtn.addEventListener("click", toggleMenu);
+  closeBtn.addEventListener("click", toggleMenu);
+</script>
 </html>
